@@ -1,23 +1,20 @@
-@media screen and (max-width: 1400px) {
-}
-
-@media screen and (max-width: 1200px) {
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .hero-container {
-    min-height: 25vh;
-    justify-content: space-between;
-    padding: 0 2rem;
+    min-height: 18vh;
   }
-  nav {
-    gap: 45rem;
+  #navbar {
+    padding: 5rem 3rem;
   }
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 51px;
+    top: 101px;
     right: 0;
-    width: 65.9%;
+    width: 65%;
     text-align: right;
+    margin-right: 3rem;
   }
   .nav-links a {
     display: block;
@@ -34,10 +31,13 @@
   }
   .logo.active {
     height: 40rem;
+    z-index: 4;
   }
   .burger.active {
     top: -350px;
     background-color: var(--color3);
+    padding: 0.5rem 1rem;
+    z-index: 3;
   }
   .nav-links.active {
     display: flex;
@@ -84,20 +84,22 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Mobile View */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   .hero-container {
     min-height: 65vh;
   }
-  nav {
+  #navbar {
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    padding: 4rem 0;
+    gap: 1rem;
   }
   .nav-links {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 198px;
+    top: 40rem;
     right: 0;
     width: 100%;
     text-align: center;
@@ -113,16 +115,17 @@
     height: auto;
   }
   .hero-container.mactive {
-    min-height: 110vh;
-  }
-  .logo.mactive {
-    position: relative;
-    top: -170px;
-    height: inherit;
+    min-height: 100vh;
   }
   .burger.mactive {
-    top: -170px;
+    top: 0;
     background-color: var(--color3);
+    padding: 0.5rem 1rem;
+    z-index: 10;
+  }
+  .nav-links.active {
+    display: flex;
+    z-index: 9;
   }
   .welcome-container {
     padding: 1rem;

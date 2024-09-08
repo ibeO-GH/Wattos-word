@@ -13,6 +13,8 @@ the use flexbox and grid.
 
 \*Implement responsiveness for tablet and mobile screens.
 
+## GitHub Pages - https://ibeo-gh.github.io/Wattos-word/
+
 ## Screenshot of how it looks
 
 <img src="/screenshots/screenshot1.png" alt="image" />

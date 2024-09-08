@@ -1,3 +1,4 @@
+// Js code
 function toggleNav() {
   const navLinks = document.getElementById("navLinks");
   const burger = document.querySelector(".burger");
